@@ -1,0 +1,19 @@
+{
+
+  "manifest_version": 2,
+  "name": "Remscroll",
+  "version": "1.0",
+
+  "description": "Because scrolling to the old location on your tab after restarting your browser is a waste of time.",
+
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_title": "Remscroll",
+    "default_popup": "Main.html"
+  }
+}
