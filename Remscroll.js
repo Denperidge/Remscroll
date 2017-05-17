@@ -25,7 +25,17 @@ document.getElementById("btnScroll").addEventListener("click",function(e){
       chrome.storage.local.get(currentUrl, function(data){
         var scrollLocation = data[currentUrl];
         chrome.tabs.executeScript({code: "document.body.scrollTop = " + scrollLocation});
-        document.getElementById("pStatus").innerHTML = "Scroll location set!"
+
+		// MODIFIED CODE FROM SAVING,GETTING SCROLL LOCATION
+		chrome.tabs.executeScript({file: "GetScroll.js"}, function(data){
+			var currentUrl = data[0][0];
+			var currentScroll = data[0][1];
+			if (currentScroll < scrollLocation || currentScroll > scrollLocation)  // If the current scroll location is less than the desired  
+				setTimeout(document.getElementById("btnScroll").click(), 1000);  // Scroll again, don't update status
+			else document.getElementById("pStatus").innerHTML = "Scroll location set!";  // If the correct scrollLocation is achieved, update status
+		});
+
+        
       });
     });
   }
