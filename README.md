@@ -10,7 +10,15 @@ Thanks to @MaxxxFoxxx for coming up with the concept.
 - Open Chrome and navigate to chrome://extensions/
 - Click "Load unpacked extension…" (Enable developer mode if the button is not there)
 - Select the repository/folder
+- You can probably disable developer mode afterwards. Maybe you cannot. Not my problem!
 - All done!
 
 ## Contributing
 Have any suggestions? Great! I prefer suggestions in an Issue Tracker, however Pull Requests are also appreciated.
+
+## Troubleshooting
+- Why not package this into an extension file?
+Because chrome doesn't allow packaged extensions that don't come from the Chrome Extension store thing.
+
+- Why not upload it there then?
+Because I am not paying the entry fee unless I make more extensions in the future.
