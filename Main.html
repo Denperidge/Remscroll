@@ -4,7 +4,9 @@
     <style>
       html, body {
         width: 250px;
+        margin: 0px;
       }
+
 
       #pTitle{
         font-weight: bold;
@@ -19,11 +21,40 @@
         width: 100px;
         margin: 0px 5px;
       }
+
+      #head,#body,#foot
+      {
+        padding-left: 5px;
+      }
+
+      #head
+      {
+        text-align: center;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        color: white;
+        background-color: black;
+      }
+
+      #body
+      {
+        background-color: #cce5ff;
+      }
+
+      #foot
+      {
+        color: white;
+        background-color: #003399;
+        padding-bottom: 5px;
+      }
+
     </style>
   </head>
   <body>
-    <div id="container">
+    <div id="head">
       <h3>Remscroll</h3>
+    </div>
+    <div id="body">
       <p id="pTitle">Status: </p>
       <p id="pStatus"></p>
       <div id="divButtons">
@@ -31,8 +62,10 @@
         <button id="btnSave">Save current location</button>
       </div>
       <br>
+    </div>
+    <div id="foot">
       <p>Load more button to click:</p>
-      <input id="loadButtonName" placeholder="Class/ID Name" type="text"/>
+      <input id="loadButtonName" placeholder="Text on load-more button" type="text"/>
     </div>
     <script src="Remscroll.js"></script>
   </body>
