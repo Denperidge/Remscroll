@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Remscroll</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="fadetransition.js"></script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Remscroll</h1>
+      <b>
+        Because scrolling to the old location on your tab after restarting your
+        browser is a waste of time.
+      </b>
+      <hr>
+      <br>
+
+      <img class="profilePicture" src="https://avatars2.githubusercontent.com/u/27348469?v=3&s=460" alt="StijnDotExe's Profile Picture"/>
+      <p>
+        A simple Chrome extension to save your scroll location on any website:
+      </p>
+      <ul>
+        <li>Supports saving/setting scroll location</li>
+        <li>Saves load-more-button-to-click text</li>
+        <li>Simple graphical layout</li>
+        <br>
+        <li>Free to use, forever</li>
+        <li>Open Source</li>
+      </ul>
+      <br style="clear:left;">
+      <br>
+
+
+      <a href="https://github.com/StijnDotExe/Remscroll/releases">
+        <div class="linkButton">
+          <p>Download</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/StijnDotExe/Remscroll/wiki">
+        <div class="linkButton">
+          <p>Instructions</p>
+        </div>
+      </a>
+
+      <a href="https://github.com/StijnDotExe/Remscroll/">
+        <div class="linkButton">
+          <p>Source Code</p>
+        </div>
+      </a>
+    </div>
+    <script>
+      $("#container").children().css("opacity", 0);
+      $("div").not("#container").css("opacity", 0);
+    </script>
+  </body>
+</html>

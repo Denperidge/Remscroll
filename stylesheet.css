@@ -1,0 +1,105 @@
+body
+{
+  background-color: #164469;
+}
+
+#container
+{
+  color: white;
+  width: 90vw;
+  background-color: #2776b6;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10px;
+  font-family: sans-serif;
+  padding: 20px;
+  overflow: hidden;
+}
+
+a
+{
+  text-decoration: none;
+  color: white;
+
+}
+
+.profilePicture
+{
+  float: left;
+  padding-right: 10px;
+}
+
+ul
+{
+  overflow: hidden;
+}
+
+.linkButton
+{
+  width: 150px;
+
+  text-align: center;
+
+  border-width: thin;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: #208000;
+
+  background-color: #2db300;
+
+  margin-right:20px;
+
+  float: left;
+}
+
+/* Put features under the profile picture at a small screen size */
+@media screen and (max-width:700px)
+{
+  .profilePicture
+  {
+    float: none;
+  }
+}
+
+@media screen and (max-width:580px)
+{
+  /* Remove the dark background when the viewport gets too small */
+  #container
+  {
+    margin-left: -10px;
+    margin-right: none;
+    width: 100%;
+  }
+/* Put LinkButtons under eachothers */
+  .linkButton
+  {
+    width: 75vw;
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+
+    font-size: 8vw;
+  }
+  /* Center profilepicture */
+  .profilePicture
+  {
+    display: block;
+    margin: auto;
+  }
+
+  /* Modify top line */
+  hr
+  {
+    width: 95%;
+    margin-right: 20px;
+  }
+}
+
+/* Make the profilePicture when the viewport gets hella small */
+@media screen and (max-width:420px)
+{
+  .profilePicture
+  {
+    width: 75vw;
+  }
+}
