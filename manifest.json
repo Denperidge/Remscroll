@@ -1,5 +1,4 @@
 {
-
   "manifest_version": 2,
   "name": "Remscroll",
   "version": "1.0",
@@ -15,5 +14,9 @@
   "browser_action": {
     "default_title": "Remscroll",
     "default_popup": "Main.html"
+  },
+
+  "icons": {
+    "260": "Remscroll.png"
   }
 }
