@@ -1,3 +1,6 @@
+# NOTE
+This is an archived repository from 2017, that I'm keeping up mostly so I can look back at my past code.
+
 # Remscroll
 Because scrolling to the old location on your tab after restarting your browser is a waste of time.
 
@@ -8,7 +11,7 @@ Thanks to @MaxxxFoxxx for coming up with the concept.
 ## Installation
 - Clone the repository or download the zip (extract this to a folder)
 - Open Chrome and navigate to chrome://extensions/
-- Click "Load unpacked extension…" (Enable developer mode if the button is not there)
+- Click "Load unpacked extensionï¿½" (Enable developer mode if the button is not there)
 - Select the repository/folder
 - You can probably disable developer mode afterwards. Maybe you cannot. Not my problem!
 - All done!
