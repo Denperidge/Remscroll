@@ -1,5 +1,9 @@
 # NOTE
 This is an archived repository from 2017, that I'm keeping up mostly so I can look back at my past code.
+In 2020, I made the following changes:
+- Renamed master branch to main
+- Added note in README
+- Changed license to a standardized one
 
 # Remscroll
 Because scrolling to the old location on your tab after restarting your browser is a waste of time.
